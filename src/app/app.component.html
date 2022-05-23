@@ -1,0 +1,12 @@
+<div id="mainContainer">
+  <h1>amChart4 Demo: BaselinePricing LOB Chart</h1>
+  <a (click)="userStoryLink()" href="javascript:void(0);"><i>Reference User Story</i></a>
+  <h4>Choosing a LOB will produce chart data below</h4>
+  <div class="col-4">
+    <select class="form-control" id="pCategory" name="pCategory" [(ngModel)]="selectedLOB" (ngModelChange)="startupChart($event)">
+      <option value="" disabled>Choose a LOB</option>
+      <option *ngFor="let c of defaultAllLOBs" [value]="c">{{c}}</option>
+    </select>
+  </div>
+  <app-chart *ngIf="displayChart == true"></app-chart>
+</div>

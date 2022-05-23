@@ -1,0 +1,9 @@
+#mainContainer {
+    margin: auto;
+    background-color: whitesmoke;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
